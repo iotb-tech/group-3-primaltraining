@@ -77,22 +77,23 @@ const Footer = () => {
                 <a
                   className="underline"
                   href="https://www.instagram.com/?hl=en"
+                  target='_blank'
                 >
                   Instagram
                 </a>
               </li>
               <li className="font-geist text-black cursor-pointer hover:text-black/40">
-                <a className="underline" href="https://x.com/">
+                <a className="underline" href="https://x.com/" target='_blank'>
                   X
                 </a>
               </li>
               <li className="font-geist text-black cursor-pointer hover:text-black/40">
-                <a className="underline" href="https://api.linkedin.com/login">
+                <a className="underline" href="https://api.linkedin.com/login" target='_blank'>
                   LinkedIn
                 </a>
               </li>
               <li className="font-geist text-black cursor-pointer hover:text-black/40">
-                <a className="underline" href="https://open.spotify.com/">
+                <a className="underline" href="https://open.spotify.com/" target='_blank'>
                   Spotify
                 </a>
               </li>

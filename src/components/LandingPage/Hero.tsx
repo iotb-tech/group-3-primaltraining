@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -34,11 +35,11 @@ const Hero = () => {
               programming. Whether you&apos;re building muscle or breaking PRs,
               we help you push past limits.
             </p>
-            <a href="#about-us">
+            <Link href="/about" className="font-geist-mono text-black">
               <button className="font-geist-mono px-4 py-2 rounded-lg font-medium cursor-pointer hover:bg-black hover:text-white">
                 ABOUT US
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 

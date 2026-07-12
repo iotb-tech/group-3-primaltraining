@@ -16,22 +16,22 @@ const Header = () => {
         >
           <div className="max-w-[1484px] mx-auto h-full p-4 flex justify-between items-center">
             <div className="flex justify-center items-center gap-4">
-              <div className="relative w-10 h-10 md:w-12 md:h-12">
+              <div className="relative w-10 h-10 md:w-13 md:h-13">
                 <Image
                   src="/icons/logo.svg"
                   alt="PrimalTraining Logo"
                   fill
-                  sizes="(max-width: 768px) 40px, 48px"
+                  sizes="(max-width: 768px) 40px, 52px"
                   className="object-contain"
                 />
               </div>
 
-              <p className="font-instrument font-bold text-lg md:text-xl text-black tracking-tighter">
+              <p className="font-instrument font-bold text-lg md:text-[23px] text-black tracking-tighter">
                 PrimalTraining
               </p>
             </div>
 
-            <ul className="hidden md:flex md:justify-center md:items-center md:gap-10">
+            <ul className="hidden md:flex md:text-[19px] md:justify-center md:items-center md:gap-10">
               <li className="font-geist-mono text-black">
                 {/* <a href="#home">HOME</a> */}
                 <Link href="/" className="font-geist-mono text-black">
