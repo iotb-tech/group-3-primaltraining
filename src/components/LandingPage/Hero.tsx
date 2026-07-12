@@ -1,46 +1,93 @@
-import React from 'react'
+import Image from "next/image";
 
-    const Hero = () => {
+const Hero = () => {
   return (
-    <section className="bg-white px-8 py-12">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-6xl md:text-8xl font-black mb-8 uppercase tracking-tighter">
-          TRAIN HARD. <span className="text-blue-600">LIVE BETTER</span>
+    <section className="w-full max-w-[1484px] mx-auto">
+      <div>
+        <h1 className="font-anek font-extrabold uppercase text-black text-[40px] md:text-[68px] lg:text-[100px] leading-none tracking-tighter px-4 py-2">
+          TRAIN HARD.<span className="text-[#808CFD]"> LIVE BETTER</span>
         </h1>
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div className="md:col-span-2">
-            <img src="/gym1.jpeg" alt="Training" className="w-full h-auto object-cover" />
-          </div>
-          <div className="bg-black text-white p-8 flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-4">FOR THE COMMITTED</h2>
-            <p className="text-gray-300 mb-6">
-              Train like an athlete with top-tier equipment and expert programming. 
-              Whether you're building muscle or breaking PRs, we help you push past limits.
+      </div>
+
+      {/* Info Section */}
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 lg:h-[960px] md:h-[600px] pt-6">
+        {/* 1st div row 1 (spans 2 columns) */}
+        <div className="relative bg-gray-200 w-full min-h-[225px] md:min-h-[300px] lg:min-h-[480px] md:h-full md:col-span-2">
+          <Image
+            src="/images/meghan-holmes.jpg"
+            alt="Meghan Holmes"
+            fill
+            sizes="(max-width: 768px) 100vw, 66vw"
+            className="object-cover"
+          />
+        </div>
+
+        {/* 2nd div row 1 (takes up the last column) */}
+        <div className="bg-white flex flex-col justify-between p-6 border border-black min-h-[300px] md:min-h-[300px] lg:min-h-[480px]">
+          <h2 className="font-anek font-extrabold text-[50px] leading-none tracking-tighter">
+            FOR THE COMMITTED
+          </h2>
+
+          <div className="space-y-4 pb-8">
+            <p className="font-geist text-[19px]">
+              Train like an athlete with top-tier equipment and expert
+              programming. Whether you&apos;re building muscle or breaking PRs,
+              we help you push past limits.
             </p>
-            <button className="text-sm underline font-bold uppercase self-start">About Us</button>
+            <a href="#about-us">
+              <button className="font-geist-mono px-4 py-2 rounded-lg font-medium cursor-pointer hover:bg-black hover:text-white">
+                ABOUT US
+              </button>
+            </a>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-4">
-            <h3 className="text-2xl font-bold mb-3">GUIDED BY EXPERTS</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              We believe in creating a positive environment where you can thrive. 
-              We're here to help you achieve your goals and unlock your full potential.
-            </p>
-            </div>
-          </div>
-          <div className="p-4">
-            <h3 className="text-2xl font-bold mb-3">DYNAMIC OPEN GYM</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Our facility is the optimal environment for strength training and performance, 
-              fully equipped with top-of-the-line racks, ample training areas, and a focus on functional movement.
-            </p>
-          </div>
-          <div className="p-4">
-            <img src="/gym5.jpeg" alt="gym rope" className="w-full h-48 object-cover" />
-          </div>
+
+        {/* 5th div (3rd on mobile) */}
+        <div className="relative min-h-[300px] md:hidden">
+          <Image
+            src="/images/spencer-davis.jpg"
+            alt="Spencer Davis"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
         </div>
-      
+
+        {/* 3rd div row 2 (takes one column) */}
+        <div className="bg-white p-6 pb-16 flex flex-col justify-between border border-black md:border-b-2 min-h-[151px] md:min-h-[300px] lg:min-h-[480px]">
+          <h2 className="font-anek font-extrabold text-[50px] leading-none tracking-tighter">
+            GUIDED BY EXPERTS
+          </h2>
+          <p className="text-[19px]">
+            We believe in creating a positive environment where you can thrive.
+            We&apos;re here to help you achieve your goals and unlock your full
+            potential.
+          </p>
+        </div>
+
+        {/* 4th div */}
+        <div className="bg-white p-6 pb-12 flex flex-col justify-between border border-black border-b-2 min-h-[171px] md:min-h-[300px] lg:min-h-[480px]">
+          <h2 className="font-anek font-extrabold text-[50px] leading-none tracking-tighter">
+            DYNAMIC OPEN GYM
+          </h2>
+          <p className="text-[19px]">
+            Our facility is the optimal environment for strength training and
+            performance, fully equipped with top-of-the-line tools, ample
+            training areas, and a focus on functional movement.
+          </p>
+        </div>
+
+        {/* 5th div */}
+        <div className="relative hidden md:block min-h-[480px] md:min-h-[300px] lg:min-h-[480px] md:h-full">
+          <Image
+            src="/images/spencer-davis.jpg"
+            alt="Spencer Davis"
+            fill
+            sizes="33vw"
+            className="object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 };
